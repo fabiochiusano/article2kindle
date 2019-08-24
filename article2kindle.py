@@ -136,7 +136,11 @@ def from_pdf_to_email(conf, connection):
 
 def clean_pdf_directory(conf):
     shutil.rmtree(conf["pdfs_directory_name"])
-    os.makedirs(conf["pdfs_directory_name"])
+    maybe_create_pdf_directory(conf)
+
+def maybe_create_pdf_directory(conf):
+    if not os.path.exists(conf["pdfs_directory_name"]):
+        os.makedirs(conf["pdfs_directory_name"])
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert HTML pages to PDFs and send them to your Kindle by email.")
@@ -152,6 +156,7 @@ if __name__ == "__main__":
 
     if args.pdf2email or args.html2pdf or args.clean:
         conf = read_conf(conf_filename)
+        maybe_create_pdf_directory(conf)
     if args.pdf2email:
         connection = get_email_connection(conf)
     if args.html2pdf:
