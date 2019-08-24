@@ -39,6 +39,6 @@ Call:
 ```
 python article2kindle.py --html2pdf --pdf2email
 ```
-The script will visit the web pages specified in the url file, convert them to PDF and send emails to your Kindle email account with the PDFs as attachments. If your Kindle is connected to your WIFI, you will see the articles coming to your Kindle in a few moments.
+The script will visit the web pages specified in the url file, convert them to PDF and send emails to your Kindle email account with the PDFs as attachments. If your Kindle is connected to your WIFI, you will see the articles coming to your Kindle in a few moments. They will be called `openai_gpt2_follow_up.pdf` and `deepmind_unsupervised_learning.pdf`.
 ### Just send some PDFs to my Kindle
 Follow the steps 2, 3 and 4.
