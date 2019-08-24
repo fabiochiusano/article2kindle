@@ -1,6 +1,7 @@
 # article2kindle
-Small python script that converts HTML pages into PDFs and send them by email to your [Kindle](https://it.wikipedia.org/wiki/Amazon_Kindle).
+Small python script that converts HTML pages into PDFs and send them by email to your [Kindle](https://it.wikipedia.org/wiki/Amazon_Kindle). Surf the Internet, write down the urls of the most interesting articles, call the python script and read the articles on your Kindle.
 
+Tested with Python 3.7.
 ## Installation
 The simplest way is by importing the provided [Anaconda](https://www.anaconda.com/) environment `env.yaml`:
 ```
@@ -9,13 +10,15 @@ $ source activate kindle
 ```
 Moreover it is required to install [wkhtmltopdf](https://wkhtmltopdf.org/) on your system.
 - [Mac OSX](http://macappstore.org/wkhtmltopdf/)
+- [Windows](https://pypi.org/project/pdfkit/)
+- [Debian/Ubuntu](https://pypi.org/project/pdfkit/)
 
 Finally, open the `conf` file and fill the `wkhtmltopdf_path` variable with the path of the wkhtmltopdf installation on your system.
 
 ## How to use it
 ### Convert web pages to a PDFs and transfer them to your Kindle
 #### 1. Find articles that you like
-Suppose you see this [OpenAI article](https://openai.com/blog/gpt-2-6-month-follow-up) and this [DeepMind article](https://deepmind.com/blog/article/unsupervised-learning) and you want to read them.
+Suppose you see this [OpenAI article](https://openai.com/blog/gpt-2-6-month-follow-up) and this [DeepMind article](https://deepmind.com/blog/article/unsupervised-learning) and you want to read them on your Kindle.
 #### 2. Get url and choose a title for that articles
 Open the url file and write the following:
 ```
