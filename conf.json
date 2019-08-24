@@ -1,0 +1,9 @@
+{
+  "email_from": "exampleemail@hotmail.it",
+  "email_from_smtp_host": "smtp.live.com",
+  "email_from_smtp_port": 587,
+  "email_to": "kindleemail@kindle.com",
+  "wkhtmltopdf_path": "/path/to/wkhtmltopdf",
+  "urls_filename": "urls",
+  "pdfs_directory_name": "pdfs"
+}
